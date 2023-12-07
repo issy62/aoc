@@ -1,0 +1,15 @@
+BasedOnStyle: LLVM
+
+Language: Cpp
+Standard: c++20
+ColumnLimit: 120
+DerivePointerAlignment: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortLambdasOnASingleLine: Empty
+PointerAlignment: Left
+ReferenceAlignment: Left
+UseTab: Never
+ReflowComments: false
+SortIncludes: Never
+SpaceBeforeParens: Never
+
