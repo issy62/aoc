@@ -1,0 +1,10 @@
+[workspace]
+members = ["aoc-2024", "runner"]
+resolver = "2"
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+panic = "abort"
+strip = true
+

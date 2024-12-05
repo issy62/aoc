@@ -1,0 +1,9 @@
+[package]
+name = "runner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aoc-2024 = { path = "../aoc-2024" }
+clap = {version = "4.5.22", features = ["derive", "env" ]}
+
