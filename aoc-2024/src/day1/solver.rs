@@ -3,12 +3,7 @@ use crate::day1::input;
 pub fn first(input_path: &str) {
     let input = input::read(input_path);
 
-    let col: Vec<i64> = input
-        .split_whitespace()
-        .map(|n| n.parse::<i64>().unwrap_or(0))
-        .collect();
-
-    let reserve_size: usize = col.len() / 2;
+    let reserve_size: usize = input.len() / 2;
 
     let mut lhs: Vec<i64> = Vec::new();
     let mut rhs: Vec<i64> = Vec::new();
@@ -16,13 +11,13 @@ pub fn first(input_path: &str) {
     lhs.reserve(reserve_size);
     rhs.reserve(reserve_size);
 
-    for n in 0..col.len() {
+    for n in 0..input.len() {
         if n == 0 {
-            lhs.push(col[n]);
+            lhs.push(input[n]);
         } else if n % 2 == 0 {
-            lhs.push(col[n]);
+            lhs.push(input[n]);
         } else {
-            rhs.push(col[n]);
+            rhs.push(input[n]);
         }
     }
 
@@ -37,12 +32,7 @@ pub fn first(input_path: &str) {
 pub fn second(input_path: &str) {
     let input = input::read(input_path);
 
-    let col: Vec<i64> = input
-        .split_whitespace()
-        .map(|n| n.parse::<i64>().unwrap_or(0))
-        .collect();
-
-    let reserve_size: usize = col.len() / 2;
+    let reserve_size: usize = input.len() / 2;
 
     let mut lhs: Vec<i64> = Vec::new();
     let mut rhs: Vec<i64> = Vec::new();
@@ -50,13 +40,13 @@ pub fn second(input_path: &str) {
     rhs.reserve(reserve_size);
     lhs.reserve(reserve_size);
 
-    for n in 0..col.len() {
+    for n in 0..input.len() {
         if n == 0 {
-            lhs.push(col[n]);
+            lhs.push(input[n]);
         } else if n % 2 == 0 {
-            lhs.push(col[n]);
+            lhs.push(input[n]);
         } else {
-            rhs.push(col[n]);
+            rhs.push(input[n]);
         }
     }
 

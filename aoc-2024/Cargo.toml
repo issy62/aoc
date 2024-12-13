@@ -3,5 +3,8 @@ name = "aoc-2024"
 version = "0.1.0"
 edition = "2021"
 
+[lints.rust]
+unused_assignments = "allow"
+
 [dependencies]
 
